@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div>
       <div
-        className={`flex justify-between ${
+        className={`flex justify-between z-50 ${
           navBg ? "" : "bg-black"
         } py-4 fixed w-full`}
       >
