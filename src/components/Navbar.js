@@ -35,8 +35,8 @@ const Navbar = () => {
     <div>
       <div
         className={`flex justify-between ${
-          navBg ? "bg-white" : "bg-black"
-        } py-4 sticky top-0 z-50`}
+          navBg ? "" : "bg-black"
+        } py-4 fixed w-full`}
       >
         <img className="logo h-20" src={logo} alt="" />
         <img

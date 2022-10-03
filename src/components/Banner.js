@@ -31,8 +31,8 @@ const Banner = () => {
         backgroundPosition: "center center",
       }}
     >
-      <div className="px-6">
-        <h1 className=" relative text-[50px] sm:text-[90px] md:text-[90px] font-bold text-white">
+      <div className="px-6 pt-10 pb-4">
+        <h1 className=" relative text-[30px] sm:text-[90px] md:text-[90px] font-bold text-white">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="buttons flex space-x-4 text-white">

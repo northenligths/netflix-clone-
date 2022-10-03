@@ -1,0 +1,12 @@
+.image::-webkit-scrollbar {
+  display: none;
+}
+
+.rowImage {
+  transition: transform 450ms;
+}
+
+.rowImage:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
