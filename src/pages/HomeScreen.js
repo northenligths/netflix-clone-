@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
-import Row from "../components/Row";
+import Row from "../components/row/Row";
 import requests from "../Requests";
 
 const HomeScreen = () => {
