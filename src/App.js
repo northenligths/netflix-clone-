@@ -6,7 +6,7 @@ import Login from "./pages/login/Login";
 import { auth } from "./firebase";
 
 function App() {
-  const user = null;
+  const user = true;
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((userAuth) => {
       if (userAuth) {
@@ -20,7 +20,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           {user ? (
-            <Route path="/login" element={<Login />} />
+            <Route index element={<Login />} />
           ) : (
             <Route index element={<HomeScreen />} />
           )}
