@@ -7,7 +7,7 @@ import requests from "../Requests";
 const HomeScreen = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar fixed={"fixed"} />
       <Banner />
       <Row
         title=" NETFLIX ORIGINALS "

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import SignInScreen from "../../components/SignInScreen";
 import SignUpScreen from "../../components/SignUpScreen";
+import { useNavigate } from "react-router-dom";
 import "./login.css";
 
 const Login = () => {
-  const [signIn, setSignIn] = useState(false);
+  const [signIn, setSignIn] = useState(true);
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -24,7 +26,10 @@ const Login = () => {
           alt=""
           className="w-44"
         />
-        <button className="text-white px-4 mr-4 sm:px-8 bg-red-600 mx-2 font-bold sm:py-3 py-2 text-xl rounded-sm">
+        <button
+          className="text-white px-4 mr-4 sm:px-8 bg-red-600 mx-2 font-bold sm:py-3 py-2 text-xl rounded-sm"
+          onClick={() => navigate("/")}
+        >
           Sign In
         </button>
       </header>
